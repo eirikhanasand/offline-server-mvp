@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Offline MVP</title>
+    </head>
+    <body>
+        <h1>Page cached!</h1>
+        <p>If you navigate to a page that doesnt exist, it will fallback to `offline.html`.</p>
+
+        <script>
+            if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("/worker.js");
+            }
+        </script>
+    </body>
+</html>
