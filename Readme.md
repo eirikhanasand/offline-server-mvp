@@ -117,3 +117,5 @@ self.addEventListener("install", event => {
     )
 })
 ```
+
+Thanks for reading. I will write another article when I integrate this into my Nextjs application.
