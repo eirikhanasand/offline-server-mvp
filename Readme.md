@@ -30,12 +30,14 @@ For example here, the network IP is `172.20.10.2`. Make sure the phone and compu
 2. Generate the certificate using `mkcert 172.20.10.2`. Make sure to run it in the same folder as the MVP.
 
 3. Start the server using the following command. This starts the server on port 3000 on the identified local network IP, and uses the created certificate to serve over HTTPS.
+```
 http-server . \
   -S \
   -C 172.20.10.2.pem \
   -K 172.20.10.2-key.pem \
   -p 3000 \
   -a 172.20.10.2
+```
 
 4. The server is now available at `https://172.20.10.2:3000`
 
